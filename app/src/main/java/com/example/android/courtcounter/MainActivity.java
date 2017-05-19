@@ -8,6 +8,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     int teamAScore = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         teamAScore = teamAScore + 3;
         displayForTeamA(teamAScore);
     }
+
     /**
      * Displays the given score for Team A.
      */
