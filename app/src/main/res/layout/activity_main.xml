@@ -25,6 +25,12 @@ android:orientation="vertical">
             android:padding="16dp"
             android:text="Team A"
             android:textAlignment="center"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cavs"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:id="@+id/team_a_score"
@@ -33,7 +39,9 @@ android:orientation="vertical">
             android:layout_gravity="center_horizontal"
             android:padding="16dp"
             android:text="0"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
 
         <Button
             android:layout_width="match_parent"
@@ -83,6 +91,13 @@ android:orientation="vertical">
             android:text="Team B"
             android:textAlignment="center"/>
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/nyk"
+            android:scaleType="fitCenter"/>
+
         <TextView
             android:id="@+id/team_b_score"
             android:layout_width="match_parent"
@@ -90,7 +105,9 @@ android:orientation="vertical">
             android:layout_gravity="center_horizontal"
             android:padding="16dp"
             android:text="0"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
 
         <Button
             android:layout_width="match_parent"
@@ -130,13 +147,13 @@ android:orientation="vertical">
 
 <TextView
     android:id="@+id/winner_text"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="0dp"
-    android:layout_gravity="center"
+    android:gravity="center"
     android:layout_weight="1"
     android:text="draw"
     android:textAllCaps="true"
-    android:textSize="25sp"
+    android:textSize="24sp"
     android:textStyle="bold" /> <!-- Winning Team -->
 
 </LinearLayout>
