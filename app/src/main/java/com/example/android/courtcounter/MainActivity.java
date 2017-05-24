@@ -42,9 +42,11 @@ public class MainActivity extends AppCompatActivity {
         whoIsWinning();
     }
 
-    public void resetPointsA(View view) {
+    public void resetPoints(View view) {
         teamAScore = 0;
+        teamBScore =0;
         displayForTeamA(teamAScore);
+        displayForTeamB(teamBScore);
         whoIsWinning();
     }
 
@@ -98,10 +100,10 @@ public class MainActivity extends AppCompatActivity {
 
         if(teamAScore > teamBScore){
             TextView winnerView = (TextView) findViewById(R.id.winner_text);
-            winnerView.setText(String.valueOf("    Team A\nis winning!"));
+            winnerView.setText(String.valueOf("Team A\nis winning!"));
         }else if(teamAScore < teamBScore){
             TextView winnerView = (TextView) findViewById(R.id.winner_text);
-            winnerView.setText(String.valueOf("    Team B\nis winning!"));
+            winnerView.setText(String.valueOf("Team B\nis winning!"));
         }else{
             TextView winnerView = (TextView) findViewById(R.id.winner_text);
             winnerView.setText(String.valueOf("Draw"));
